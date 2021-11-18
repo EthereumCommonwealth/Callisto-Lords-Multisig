@@ -103,4 +103,10 @@ contract CallistoMultisig {
         owner[_owner] = false;
         num_owners--;
     }
+    
+    function setupDelay(uint256 _newDelayInSeconds) public
+    {
+        require(msg.sender == address(this), "Only internal voting can adjust the delay");
+        execution_delay = _newDelayInSeconds;
+    }
 }
