@@ -11,3 +11,5 @@ The multisig allows any owner to propose any Transaction (TX) that would be exec
 - If the TX was proposed and no one voted to REJECT withing 10 days after it was proposed then it can be executed
 
 Owners can be added or removed if ALL EXISTING OWNERS agree to do this.
+
+Execution Delay (default 10 days) can be configured to any value if ALL EXISTING OWNERS agree to do this.
